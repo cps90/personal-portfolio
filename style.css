@@ -1,0 +1,35 @@
+.star {
+    display: flex;
+    flex-direction: row;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.frame {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.zoomin img {
+    height: 250px;
+    width: 250px;
+    -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+            transition: all 2s ease;
+}
+
+.zoomin img:hover {
+    width: 350px;
+    height: 350px;
+}
