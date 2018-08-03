@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+#navbar {
+    background-color: #df4937;
+}
+
+.arrow-divider {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #333333;
+    color: rgb(223, 223, 223);
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.subheading {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.subheading h4 {
+    text-align: center;
+    padding: 5px 5px 40px 5px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 50px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.frame {
+    margin: 100px auto 25px auto;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.zoomin img {
+    height: 250px;
+    width: 250px;
+    -webkit-transition: all 2s ease;
+       -moz-transition: all 2s ease;
+        -ms-transition: all 2s ease;
+            transition: all 2s ease;
+}
+
+.zoomin img:hover {
+    width: 350px;
+    height: 350px;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.portfolio h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.portfolio-screenshots img {
+    margin: auto;
+}
+
+.portfolio-screenshots p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #d49625;
+    color: #333;
+}
+
+.about-me h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.about-me-paragraphs {
+    padding: 20px 0 40px 0;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-me h1 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#contact-form {
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+}
+
+.footer-contact {
+    list-style: none;
+    margin: auto;
+    padding: 20px 0;
+    font-size: .90em;
+}
+
+.footer-icons {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer-icons i {
+    padding: 20px;
+    font-size: 3em;
+}
+
+#contact-button {
+    margin: 40px auto 60px auto;
+}
+
+
+/* mobile */
+@media screen and (min-width: 360px) {
+    .portfolio-screenshots {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-screenshots img {
+        width: 340px;
+        padding: 20px 0;
+    } 
+
+    .about-me-paragraphs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-me-paragraphs p {
+        width: 340px;
+    }
+
+} 
+
+/* tablet  */
+@media screen and (min-width: 700px) {
+    .portfolio-screenshots {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .portfolio-screenshots img {
+        width: 350px;
+        padding: 20px 0;
+    }  
+
+    .about-me-paragraphs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .about-me-paragraphs p {
+        width: 300px;
+    }
+} 
+
+/* desktop */
+@media screen and (min-width: 1000px) {
+    .portfolio-screenshots {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    .portfolio-screenshots img {
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .about-me-paragraphs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .about-me-paragraphs p {
+        width: 400px;
+    }
+    
+}    
+
