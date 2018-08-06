@@ -41,18 +41,29 @@
     width: 200px;
 }
 
+@keyframes pulse {
+    0% {
+      background-color: rgb(189, 189, 189);
+    }
+    100% {
+      background-color:  #333333;
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #333333;
     color: #F8F9FA;
+    animation: pulse 5s 1;
 }
 
 .heading {
     text-align: center;
     font-size: 3.5em;
     font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
 }
 
 .subheading {
@@ -102,16 +113,41 @@
 .portfolio h1 {
     padding-top: 40px;
     padding-bottom: 20px;
+    text-shadow: 1px 1px 3px #999999;
 }
 
 .portfolio-screenshots img {
     margin: auto;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(102,102,102,1);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(102,102,102,1);
+    box-shadow: 5px 5px 10px 0px rgba(102,102,102,1);
 }
 
-.portfolio-screenshots p {
+@keyframes bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0);
+		transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+    }
+}
+
+.portfolio-screenshots img:hover {
+    animation-name: bounce;
+    animation-duration: .75s; 
+    animation-timing-function: ease-in-out; 
+    animation-delay: .2s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+
+/* .portfolio-screenshots p {
     text-align: center;
     padding-bottom: 20px;
-}
+} */
 
 .about-me {
     display: flex;
@@ -139,6 +175,7 @@
     text-align: center;
     background-color: #F8F9FA;
     color: #333333;
+    text-shadow: 1px 1px 3px #999999;
 }
 
 .contact-me h1 {
@@ -173,9 +210,14 @@
     justify-content: space-around;
 }
 
-.footer-icons i {
+.footer-icons a {
     padding: 20px;
     font-size: 3em;
+    color: #f8f9fa;
+}
+
+.footer-icons a:hover {
+    color: rgb(189, 189, 189);
 }
 
 #contact-button {
@@ -248,7 +290,7 @@
     }
 
     .about-me-paragraphs p {
-        width: 400px;
+        width: 420px;
     }
     
 }    
