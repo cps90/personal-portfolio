@@ -184,10 +184,6 @@
     padding-bottom: 20px;
 }
 
-#contact-form {
-    padding: 20px;
-}
-
 .footer {
     
     display: flex;
@@ -247,6 +243,10 @@
         width: 340px;
     }
 
+    #contact-form {
+        padding: 20px;
+    }
+
 } 
 
 /* tablet  */
@@ -270,6 +270,10 @@
     .about-me-paragraphs p {
         width: 300px;
     }
+
+    #contact-form {
+        padding: 30px;
+    }
 } 
 
 /* desktop */
@@ -292,6 +296,10 @@
 
     .about-me-paragraphs p {
         width: 420px;
+    }
+
+    #contact-form {
+        padding: 40px;
     }
     
 }    
